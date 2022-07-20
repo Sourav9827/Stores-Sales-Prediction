@@ -34,6 +34,7 @@ MANIFEST
 *.spec
 
 # Installer logs
+mlp_logs/
 pip-log.txt
 pip-delete-this-directory.txt
 
@@ -104,11 +105,14 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.storesalespred_env
 env/
 venv/
+storesalespred_env/
 ENV/
 env.bak/
 venv.bak/
+storesalespred_env.bak/
 
 # Spyder project settings
 .spyderproject
