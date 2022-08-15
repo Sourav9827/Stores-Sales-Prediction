@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 #Declearing variables for setup function
@@ -6,7 +6,7 @@ PROJECT_NAME = 'store-sales-predictor'
 VERSION = '0.0.1'
 AUTHOR = 'Sourav Mandal'
 DESCRIPTION = 'This web app will be used to predict the sales of big-mart-store'
-PACKAGES = ['salespred']
+#PACKAGES = ['salespred']
 REQUIREMENT_FILE_NAME = "requirements.txt"
 HYPHEN_E_DOT = "-e ."
 
@@ -29,7 +29,7 @@ setup(
     version = VERSION,
     author = AUTHOR,
     description = DESCRIPTION,
-    packages = PACKAGES,
+    packages = find_packages(),
     install_requires = get_requirements_list()
 )
 
